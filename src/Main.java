@@ -54,19 +54,19 @@ public class Main {
         for (int i = 0; i < choiseMap.size(); i++) {
             switch ((int) choiseMap.toArray()[i]) {
                 case 1:
-                    sortedList = LaptopSorter.sortRAM(sortedList);
+                    sortedList = Laptop.sortRAM(sortedList);
                     System.out.println("case 1 отработал!");
                     break;
                 case 2:
-                    sortedList = LaptopSorter.sortHDD(sortedList);
+                    sortedList = Laptop.sortHDD(sortedList);
                     System.out.println("case 2 отработал!");
                     break;
                 case 3:
-                    sortedList = LaptopSorter.sortOS(sortedList);
+                    sortedList = Laptop.sortOS(sortedList);
                     System.out.println("case 3 отработал!");
                     break;
                 case 4:
-                    sortedList = LaptopSorter.sortColor(sortedList);
+                    sortedList = Laptop.sortColor(sortedList);
                     System.out.println("case 4 отработал!");
                     break;
             }
