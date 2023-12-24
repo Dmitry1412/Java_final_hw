@@ -55,19 +55,15 @@ public class Main {
             switch ((int) choiseMap.toArray()[i]) {
                 case 1:
                     sortedList = Laptop.sortRAM(sortedList);
-                    System.out.println("case 1 отработал!");
                     break;
                 case 2:
                     sortedList = Laptop.sortHDD(sortedList);
-                    System.out.println("case 2 отработал!");
                     break;
                 case 3:
                     sortedList = Laptop.sortOS(sortedList);
-                    System.out.println("case 3 отработал!");
                     break;
                 case 4:
                     sortedList = Laptop.sortColor(sortedList);
-                    System.out.println("case 4 отработал!");
                     break;
             }
         }

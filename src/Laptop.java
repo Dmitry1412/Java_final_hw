@@ -61,7 +61,7 @@ public class Laptop {
         System.out.println("возможные варианты: " + uniqValues.toString());
         System.out.println(">>> ");
         String userString = scanner.next();
-        int tmp = Integer.parseInt(String.valueOf(userString.charAt(1)));
+        int tmp = Integer.parseInt(userString.substring(1));
         switch (userString.charAt(0)) {
             case (char) '<':
                 for (Laptop laptop : list) {
@@ -69,7 +69,6 @@ public class Laptop {
                         result.add(laptop);
                     }
                 }
-                System.out.println("case < отработал ram!");
                 break;
             case (char) '>':
                 for (Laptop laptop : list) {
@@ -77,7 +76,6 @@ public class Laptop {
                         result.add(laptop);
                     }
                 }
-                System.out.println("case > отработал ram!");
                 break;
             case (char) '=':
                 for (Laptop laptop : list) {
@@ -85,7 +83,6 @@ public class Laptop {
                         result.add(laptop);
                     }
                 }
-                System.out.println("case = отработал ram!");
                 break;
         }
         return result;
@@ -102,7 +99,7 @@ public class Laptop {
         System.out.println("возможные варианты: " + uniqValues.toString());
         System.out.println(">>> ");
         String userString = scanner.next();
-        int tmp = Integer.parseInt(String.valueOf(userString.charAt(1)));
+        int tmp = Integer.parseInt(userString.substring(1));
         switch (userString.charAt(0)) {
             case (char) '<':
                 for (Laptop laptop : list) {
@@ -110,7 +107,6 @@ public class Laptop {
                         result.add(laptop);
                     }
                 }
-                System.out.println("case < отработал!");
                 break;
             case (char) '>':
                 for (Laptop laptop : list) {
@@ -118,7 +114,6 @@ public class Laptop {
                         result.add(laptop);
                     }
                 }
-                System.out.println("case > отработал!");
                 break;
             case (char) '=':
                 for (Laptop laptop : list) {
@@ -126,7 +121,6 @@ public class Laptop {
                         result.add(laptop);
                     }
                 }
-                System.out.println("case = отработал!");
                 break;
         }
         return result;
@@ -145,7 +139,7 @@ public class Laptop {
         String userString = scanner.next();
         for (Laptop laptop : list) {
             if (laptop.operationSystem.equals(userString)) {
-                list.add(laptop);
+                result.add(laptop);
             }
         }
         return result;
@@ -164,7 +158,7 @@ public class Laptop {
         String userString = scanner.next();
         for (Laptop laptop : list) {
             if (laptop.color.equals(userString)) {
-                list.add(laptop);
+                result.add(laptop);
             }
         }
         return result;
